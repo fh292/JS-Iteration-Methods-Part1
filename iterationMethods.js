@@ -55,7 +55,7 @@ Part 4: Extra not required 🌶️🌶️🌶️
 const listOfNums = [1, 2, 3, 4, 55];
 function logger(listOfNums) {
   listOfNums.forEach((num) => console.log(num));
-  // return listOfNums;
+  //   return listOfNums;
 }
 console.log(logger(listOfNums));
 
@@ -98,11 +98,11 @@ console.log(hottestDays(temps, threshhold));
 
  * hint: you can combine all previous functions
 */
-const TempsInFah = [89, 67, 104, 99, 64];
+const TempsInFah = [89, 55, 104, 99, 44];
 const TempThreshhold = 60;
 function logHottestDays(TempsInFah, TempThreshhold) {
   const filteredTemp = hottestDays(TempsInFah, TempThreshhold);
   const tempInC = toCelsius(filteredTemp);
-  logger(tempInC);
+  return tempInC;
 }
 console.log(logHottestDays(TempsInFah, TempThreshhold));
