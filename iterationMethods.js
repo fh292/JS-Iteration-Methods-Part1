@@ -21,11 +21,11 @@ Write code to perform the following tasks using the map method:
 4) Create a new array that contains each number multiplied by 2.
 */
 
-const SquaredArray = numbers.map((num) => num * num);
-console.log(SquaredArray);
+const squaredArray = numbers.map((num) => num * num);
+console.log(squaredArray);
 
-const MultipliedByTwo = numbers.map((num) => num * 2);
-console.log(MultipliedByTwo);
+const multipliedByTwo = numbers.map((num) => num * 2);
+console.log(multipliedByTwo);
 
 /**
 Part 3: Combining Filtering and Mapping
@@ -37,12 +37,12 @@ Combine the filter and map methods to perform the following tasks:
 */
 
 const greaterThanOrEqual20 = numbers.filter((number) => number >= 20);
-const SquaredGreaterThan20 = greaterThanOrEqual20.map((num) => num * num);
-console.log(SquaredGreaterThan20);
+const squaredGreaterThan20 = greaterThanOrEqual20.map((num) => num * num);
+console.log(squaredGreaterThan20);
 
 const divisBy5 = numbers.filter((number) => number % 5 === 0);
-const MultipliedByThree = divisBy5.map((num) => num * 3);
-console.log(MultipliedByThree);
+const multipliedByThree = divisBy5.map((num) => num * 3);
+console.log(multipliedByThree);
 
 /**
 Part 4: Extra not required 🌶️🌶️🌶️
@@ -67,11 +67,11 @@ console.log(logger(listOfNums));
  * The conversion is:
  *   C = (F - 32) * (5/9)
  */
-const TempF = [90, 70, 88, 122];
-function toCelsius(TempF) {
-  return TempF.map((temp) => (temp - 32) * (5 / 9));
+const tempF = [90, 70, 88, 122];
+function toCelsius(tempF) {
+  return tempF.map((temp) => (temp - 32) * (5 / 9));
 }
-console.log(toCelsius(TempF));
+console.log(toCelsius(tempF));
 
 /**
  * hottestDays(temperatures, threshhold)
@@ -98,11 +98,11 @@ console.log(hottestDays(temps, threshhold));
 
  * hint: you can combine all previous functions
 */
-const TempsInFah = [89, 55, 104, 99, 44];
-const TempThreshhold = 60;
-function logHottestDays(TempsInFah, TempThreshhold) {
-  const filteredTemp = hottestDays(TempsInFah, TempThreshhold);
+const tempsInFah = [89, 55, 104, 99, 44];
+const tempThreshhold = 60;
+function logHottestDays(tempsInFah, tempThreshhold) {
+  const filteredTemp = hottestDays(tempsInFah, tempThreshhold);
   const tempInC = toCelsius(filteredTemp);
+  console.log(tempInC);
   return tempInC;
 }
-console.log(logHottestDays(TempsInFah, TempThreshhold));
